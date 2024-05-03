@@ -10,7 +10,7 @@ from litestar_granian import GranianPlugin
 from litestar_vite import ViteConfig, VitePlugin
 
 ROOT = Path(__file__).resolve().parent
-FE_ROOT = ROOT / "../../../frontend/src"
+FE_ROOT = ROOT / "../../../frontend"
 
 
 @get("/")
@@ -30,7 +30,7 @@ vite_conf = ViteConfig(
     hot_reload=True,
     use_server_lifespan=True,
     dev_mode=True,
-    resource_dir=FE_ROOT,
+    resource_dir=FE_ROOT / "src",
     template_dir=ROOT / "templates",
     port=5300,
 )
