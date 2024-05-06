@@ -1,9 +1,8 @@
 [project]
 dependencies = [
-    "litestar[standard]>=2.8.2",
-    "litestar-granian>=0.2.6",
-    "granian[reload]>=1.3.0",
-    "litestar-vite>=0.1.22",
+  "litestar>=2.8.2",
+  "litestar-granian>=0.2.6",
+  "granian[reload]>=1.3.0",
 ]
 description = "Add your description here"
 name = "multigate"
